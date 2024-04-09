@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string Nome;
+    cout<<"DIGITE SEU NOME:";
+    cin >> Nome;
+    string Sobrenome;
+    cout<<"DIGITE SEU SOBRENOME:";
+    cin >> Sobrenome;
+    cout << Sobrenome << "," << Nome[0] << Nome[Nome.length()-1]<< endl;
+    return 0;
+}
