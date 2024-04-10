@@ -1,0 +1,17 @@
+nome = input("Digite o nome: ")
+posicao = int(input("Digite a posição para alteração: "))
+
+if posicao < 0 or posicao >= len(nome):
+    print("Posição inválida.")
+else:
+    letra = nome[posicao]
+
+    if letra == 'R':
+        nome = nome[:posicao] + 'S' + nome[posicao + 1:]
+    elif letra == 'M':
+        nome = nome[:posicao] + 'N' + nome[posicao + 1:]
+    else:
+
+        nome = nome[:posicao] + '' + nome[posicao + 1:]
+
+    print("Palavra reformulada:", nome)
